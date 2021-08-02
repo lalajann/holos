@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>land-area</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <script src="../p5.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+    <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
+    <script src="land_area.js"></script>
+    <script src="particle.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a class="navbar-logo">
+            <div class="logo-image">
+                <img src="images/logo.png" style="width: 140px; height: auto" , class="img-logo">
+            </div>
+        </a>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="earthquakes-depth.html">EARTHQUAKES</a>
+        <a href="covid-cases.html">COVID-19</a>
+        <a href="stock-market-price.html">STOCK MARKET</a>
+        <a href="create.html">CREATE</a>
+    </div>
+
+    <div id="main">
+
+        <span style="font-size:30px;cursor:pointer" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div></span>
+    </div>
+
+    <!-- DROPDOWN -->
+    <div class="dropdown">
+        <button class="dropbtn">by country </i></button>
+
+    </div>
+
+
+    <script>
+        function myFunction(x) {
+            if (x.classList.toggle("change")) {
+                document.getElementById("mySidenav").style.width = "230px";
+                document.getElementById("main").style.marginLeft = "190px";
+            } else {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
